@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임시</title>
+    <script src="./js/gameSystem.js"></script>
+    <link rel="stylesheet" href="./css/game_style.css" />
+    <link rel="stylesheet" href="./css/custom-font.css" />
+</head>
+<body>
+    <!-- UI -->
+    <div class="top-box">
+        <ul class="top-div-ui">
+        <li class="chip-box-ui" id="bettingChip">배팅된 칩: 0 </li>
+        <li></li>
+        <li class="chip-box-ui" id="nowChip">배팅요구치 : 100</li>
+        </ul>
+    </div>
+    <div class="info" onclick="location.href='index.html'">
+    </div>
+    <div class="left-block">
+        <!-- 플레이어 , 컴퓨터 2가지의 칩 잔량 및 사진. -->
+            <br>
+            <div class="profile-box">
+                <div class="player-info"><img id="player-ico" src="image/컴퓨터.png" alt="응애요"><div class="player-text"></div>
+                <div class="chip-line" id="computer1_Chip"><img id="chip-img" src="image/칩.png" alt="응애요">컴퓨터1 칩 잔량: 1000</div></div>
+            </div>
+            <br>
+            <div class="profile-box">
+                <div class="player-info"><img id="player-ico" src="image/컴퓨터.png" alt="응애요"><div class="player-text"></div>
+                <div class="chip-line" id="computer2_Chip"><img id="chip-img" src="image/칩.png" alt="응애요">컴퓨터2 칩 잔량: 1000</div></div>
+            </div>
+            <br>
+            <div class="profile-box">
+                <div class="player-info"><img id="player-ico" src="image/플레이어.png" alt="응애요"><div class="player-text"></div>
+                <div class="chip-line" id="playerChip"><img id="chip-img" src="image/칩.png" alt="응애요">플레이어 칩 잔량: 1000</div></div>
+            </div>
+            <!-- 버튼 -->
+            <div class="game-btn-option">
+                <button class="game-btn" onclick="startRound() ">게임 시작
+                </button>
+                <button class="game-btn">다시 시작
+                </button>
+            </div>
+    </div>
+    <div class="card-zone">
+        <!-- 컴퓨터1 카드 -->
+        <div class="card-row" id="computer1-row">
+            <img class="card" id="computer1_Card1" src="multiMedia/0_0뒷면.jpg">
+            <img class="card" id="computer1_Card2" src="multiMedia/0_0뒷면.jpg">
+            <img class="card" id="computer1_Card3" src="multiMedia/0_0뒷면.jpg">
+        </div>
+
+        <!-- 컴퓨터2 카드 -->
+        <div class="card-row" id="computer2-row">
+            <img class="card" id="computer2_Card1" src="multiMedia/0_0뒷면.jpg">
+            <img class="card" id="computer2_Card2" src="multiMedia/0_0뒷면.jpg">
+            <img class="card" id="computer2_Card3" src="multiMedia/0_0뒷면.jpg">
+        </div>
+
+        <!-- 플레이어 카드 -->
+        <div class="card-row" id="player-row">
+            <img class="card" id="playerCard1" onclick="selectCard1()" src="multiMedia/0_0뒷면.jpg">
+            <img class="card" id="playerCard2" onclick="selectCard2()" src="multiMedia/0_0뒷면.jpg">
+            <img class="card" id="playerCard3" onclick="selectCard3()" src="multiMedia/0_0뒷면.jpg">
+        </div>
+    </div>
+    <!-- 족보 라인업 -->
+    <div class="right-block">
+            <div class="jokbo" style="font-size: 25px;"><img id="chip-img" src="image/책.png" alt="응애요">최종 족보를 선택해주세요!&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="choiceBlock">
+            <div class="choice" id="choice1" data-value="1">
+                <img id="CardComb_1_1" src="multiMedia/0_0뒷면.jpg">
+                <img id="CardComb_1_2" src="multiMedia/0_0뒷면.jpg">
+            </div>
+            <div class="choice" id="choice2" data-value="2">
+                <img id="CardComb_2_1" src="multiMedia/0_0뒷면.jpg">
+                <img id="CardComb_2_2" src="multiMedia/0_0뒷면.jpg">
+            </div>
+            <div class="choice" id="choice3" data-value="3">
+                <img id="CardComb_3_1" src="multiMedia/0_0뒷면.jpg">
+                <img id="CardComb_3_2" src="multiMedia/0_0뒷면.jpg">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="right-block-btn" id="call" onclick="callBetting(player)">
+            콜
+    </div>
+    <div class="right-block-btn" id="half" onclick="halfBetting(player)">
+            하프
+    </div>
+    <div class="right-block-btn" id="die" onclick="dieBetting(player)">
+            다이
+    </div>
+    <div class="right-block-trn" id="currentTurn">
+        <img id="chip-img" src="image/현재 턴.png" alt="응애요">현재 턴: unknown
+    </div>
+</body>
+</html>

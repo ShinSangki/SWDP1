@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/rule_Style.css">
+    <title>Rule</title>
+</head>
+
+<body>
+    <!-- 헤더 가져옴 -->
+    <header class="top">
+        <div class="top_logo">
+            <img src="./index_image/섯다 로고.png" alt="섯다 로고" />
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="top_logo"><a href="./index.html"><img src="./index_image/섯다로고.png" alt="섯다 로고" /></a></li>
+                <li><a href="./index.html#education"
+                        style="text-decoration: none; color: black;">AboutUS</a></li>
+                <li><a href="https://github.com/ShinSangki/SWDP1.git" target="_blank"
+                        style="text-decoration: none; color: black;">GithHUB</a></li>
+                <li><a href="#Rule" style="text-decoration: none; color: black;">Rule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 룰 이미지와 제목 -->
+    <div class="main-section">
+        <div class="rule_image">
+            <h1 class="fadeInUp" style="color: aliceblue;">게임의 룰에 대해 설명하겠습니다!</h1>
+        </div>
+    </div>
+    <!-- 게임에 대한 설명 -->
+    <div class="rules_First_Box">
+        <div class="rule_left_items">
+            <div class="rule_First_Titles">섯다 소개</div>
+            <div class="pTage_Background">
+                <p class="pTage">섯다는 서양의 포커 룰을 동양의 전통 카드(광을 포함한 1월~10월 카드 20장)로<br> 즐길 수 있도록 만든 게임입니다.</p>
+                <p class="pTage">각 플레이어는 카드를 받아 조합을 만들고, 베팅을 진행합니다.</p>
+                <p class="pTage">베팅이 끝난 후 서로의 카드를 공개해, 가장 높은 족보를 가진 플레이어가 승리합니다.</p>
+                <p class="pTage">라운드에서 승리하면 베팅된 칩을 모두 가져갑니다.</p>
+                <p class="pTage"><strong>유사한 게임:</strong> 포커, 텍사스 홀덤, 섯다(화투)</p>
+            </div>
+            <!-- 특수족보 이미지 -->
+            <div class="left_imges1 ">
+                <p style="text-shadow: -0px -0px 0 #000,  0px -0px 0 #000,-0px 0px 0 #000,1px 1px 0 #000;
+                        color: green;
+                        font-family: DungGeunMo;
+                        font-weight: bold;
+                        font-size: 20px;">
+                    특수족보
+                </p>
+            </div>
+        </div>
+        <!-- 일반족보 이미지 -->
+        <div class="right_imges1">
+            <p style="text-shadow: -0px -0px 0 #000,  0px -0px 0 #000,-0px 0px 0 #000,1px 1px 0 #000;
+                        color: green;
+                        font-family: DungGeunMo;
+                        font-weight: bold;
+                        font-size: 20px;">
+                일반족보
+            </p>
+        </div>
+    </div>
+
+    <!-- 중간 하얀 공백 공간 -->
+    <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+        <a href="mini_Rule_Page.html" target="_blank"><button style="height: 50px;" class="custom-btn">미니 족보</button></a>
+    </div>
+
+    <!-- 게임 진행 방법 -->
+    <div class="rules_Second_Box">
+        <div class="rule_Second_Title">게임 진행 방법</div><br><br><br>
+        <div class="rules_Second_Items">
+            <!-- 게임 진행 관련 설명 -->
+            <ol class="game_Progress">
+                <li>
+                    <strong class="strongTage">진행 순서 결정</strong>
+                    <p>매 라운드마다 선(진행 순서)은 랜덤으로 지정됩니다.</p>
+                </li><br><br><br>
+                <li>
+                    <strong class="strongTage">참여 및 베팅</strong>
+                    <p>게임 시작 시, 모든 플레이어는 최소 배팅 요구치(칩 100개)를 지불하고 참여합니다.</p>
+                </li><br><br><br>
+                <li>
+                    <strong class="strongTage">베팅 라운드</strong>
+                    <p>
+                        베팅은 1명을 제외한 모든 플레이어가 '콜' 또는 '다이'를 할 때까지 계속됩니다.
+                    <p>자신의 차례가 오면 '콜', '다이', '하프' 중 하나를 선택하여 베팅합니다.</p>
+                    <ul><br>
+                        <li><strong>콜</strong>: 앞사람이 베팅한 만큼의 칩을 베팅합니다. 모두가 '콜'을 하면 베팅이 종료됩니다.</li>
+                        <li><strong>하프</strong>: 앞사람이 베팅한 금액의 1.5배를 베팅합니다.</li>
+                        <li><strong>다이</strong>: 지금까지 베팅한 칩을 포기하고 해당 라운드에서 제외됩니다.</li>
+                    </ul>
+                    </p>
+                </li><br><br><br>
+                <li>
+                    <strong class="strongTage">카드 조합 선택</strong>
+                    <p>
+                        베팅이 종료된 후, 각 플레이어는 자신이 받은 카드 중 2장의 조합을 선택해 높은 족보를 만듭니다.
+                    <ul><br>
+                        <li><strong>2장일 경우</strong>: 그 2장에 해당하는 족보로 진행합니다.</li>
+                        <li><strong>3장일 경우</strong>: 3장 중 2장의 조합을 선택해 진행합니다.</li>
+                    </ul>
+                    </p>
+                </li><br><br><br>
+                <li>
+                    <strong class="strongTage">승패 결정</strong>
+                    <p>카드 공개 후, 가장 높은 족보를 가진 플레이어가 라운드에서 승리합니다.</p>
+                </li>
+            </ol>
+            <!-- 베팅 버튼 및 베팅시 유저 색상에 대한 설명 -->
+            <div id="rule_BettingColor">
+                <p style="text-shadow: -0px -0px 0 #000,  0px -0px 0 #000,-0px 0px 0 #000,1px 1px 0 #000;
+                        color: tomato;
+                        font-family: DungGeunMo;
+                        font-weight: bold;
+                        font-size: 20px;
+                        margin: 20px;">
+                    베팅 색상 구분
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
