@@ -1,0 +1,42 @@
+
+/* 기본 세팅 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*line-height -> 줄 간격(행간)을 지정하는 속성 
+   padding-bottom -> 내부의 아래쪽 여백 공간을 만듦.
+  */
+/*body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+*/
+
+/* 굳이 말하자면, 메뉴를 만들때 주로 사용하는 코드인 nav임.
+역할 자체가 주로 그런것에 특화. */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* 배경 색이 없으면 배경 콘텐츠랑 겹쳐서 안 보여 */
+  z-index: 1000; /* 다른 요소 위에 나오게 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 살짝 그림자 효과 */
+}
+
+/* 링크 디자인 재정의. */
+
+a {
+  color: #5e3ec9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

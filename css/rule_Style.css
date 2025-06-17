@@ -1,0 +1,176 @@
+
+/* 메뉴 디자인 */
+.nav-menu{
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 0 20px;
+}
+
+.top_logo {
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+/* top_logo 이미지 시스템 */
+.top_logo img {
+    height: 60px;
+}
+/* 룰 이미지와 제목 */
+.main-section {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.rule_image {
+    background-image: url("../image/Rule_Background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DungGeunMo';
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+/* 첫번째 룰 박스 */
+.rules_First_Box {
+    background-color: #E6E8EA;
+    display: flex;
+    justify-content: space-between
+}
+/* 소제목1 */
+.rule_First_Titles {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ff5e57;
+    display: inline-block;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-family: 'DungGeunMo';
+}
+/* pTage 모음 */
+.rule_left_items {
+width: 700px;
+position: relative
+}
+.pTage {
+    font-size: 18px;
+    height: 60px;
+    margin-top: 60px;
+    margin-left: 100px;
+    /* text-shadow: 
+        -0px -0px 0 #000,  
+        0px -0px 0 #000,
+        -0px 0px 0 #000,
+        1px 1px 0 #000;
+    color: gray; */
+}
+/* 특수족보 상자 */
+.left_imges1 {
+    width: 700px;
+    height: 400px;
+    background-image: url("../image/특수족보.jpg");
+    background-size: cover;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* 오른쪽 긴 족보상자 */
+.right_imges1 {
+    width: 600px;
+    height: 1200px;
+    background-color: #000;
+    background-image: url("../image/일반 족보.png");
+    background-size: cover;
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+
+/* 룰 두번째 박스 */
+.rules_Second_Box {
+    background-color: #E6E8EA;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+/* 소제목2 */
+.rule_Second_Title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ff5e57;
+    display: inline-block;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-family: 'DungGeunMo';
+}
+/* 룰박스 왼쪽 */
+.rules_Second_Items {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+/* text모음 */
+.game_Progress {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+.strongTage {
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+/* 베팅 색상 이미지 */
+#rule_BettingColor {
+    width: 750px;
+    height: 750px;
+    margin-left: 50px;
+    background-color: #000;
+    background-image: url("../rule_image/베팅색.png");
+    background-size: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: 2px solid #ff5e57;
+}

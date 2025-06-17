@@ -1,0 +1,313 @@
+/*
+
+gap -> 간격
+width, height -> 가로, 세로
+font- -> font관련 설정라인업
+backgrond -> 바깥배경 설정.
+position -> 웹 페이지 배치 요소 설정.
+display -> 레이아웃 배치 설정
+
+*/
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: pixelroborobo;
+    background-color: white;
+    background-image: url("../image/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* 글자 정렬. */
+.top-div-ui{
+  position: relative;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  text-align: center;
+  list-style-type: none; /* O모양 제거. */
+  top: -20px;
+  
+}
+
+.top-box {
+  position: relative;
+  left: 48%;                
+  top: 10px;
+  background-color: #fffdfa;
+  border-radius: 8px;
+  padding: 5px 10px;
+  width: 700px;
+  height: 30px;
+  box-shadow: 0 2px 12px rgba(215, 145, 4, 0.5);
+}
+
+.top-box-ui{
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  top: 1px;
+  background-color: rgb(196, 193, 193);
+  border-radius: 15px;
+}
+
+/* 이미지. */
+#chip-img{
+  height: 40px;
+  width: 40px;
+  vertical-align: middle; /* 글자와 위치 어그러짐 방지. */
+}
+
+.info {
+  position: relative;
+  left: auto;                
+  top: -85px;                 
+  text-align: left;
+  padding: 10px;         
+  display: block;
+  background-image: url("../image/INFO.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  /* 이미지를 영역 안에 맞게 */
+  width: 200px;
+  height: 220px;
+}
+
+.left-block {
+  position: fixed;
+  left: auto;                
+  top: 12%;                 
+  text-align: left;
+  padding: 10px;         
+  display: block;
+  height: 220px;
+}
+
+.right-block {
+  position: fixed;
+  right: 0;               
+  top: 75px;                           
+  text-align: right;
+  padding: 10px;    
+  display: block;
+  width: 400px; 
+  height: 70px;
+  background-image: url("../image/info-player.png");
+  background-position: center;
+  background-size: 450px 250px; 
+  background-repeat: no-repeat;
+}
+
+
+.right-block-btn{
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-top: 20px;
+  top: 24px;
+  display: inline-block;
+  text-align: center;
+  left: 62%;
+  width: 120px;
+  height: 30px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #fef9f1, #f7e3c8); /* 색이 순서대로 바뀜 */
+  border: 2px solid #812e1f; /* 붉은 브라운 */
+  border-radius: 12px; /* 둥글둥글 */
+}
+
+.right-block-btn:hover{
+  transform: translateY(-6px);
+  cursor: pointer; /* 손가락 모양을 포인터로 변경 */
+}
+
+.right-block-trn{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 240px;
+  left: 54%;
+  top: -30px;
+  background-color: #f7e3c8;
+  border-radius: 10px;
+}
+
+.center-block {
+  position: relative;
+  display: inline;
+  vertical-align: top; /* 아래쪽 공간 생김김 제거 */
+  text-align: center;
+  left: 33%;
+  top: -200px;
+  border-radius: 16px;
+}
+
+.center-block-card {
+  margin: 10px;
+}
+
+.card-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* 각 카드 줄 간 간격 */
+  margin-top: -160px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* 카드 사이 간격 */
+}
+
+.card {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+#player-ico{
+  height: 100px;
+  width: 100px;
+  vertical-align: middle; /* 글자와 위치 어그러짐 방지. */
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.chip-line {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.chip-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-box{
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  border: 4px solid #812e1f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  gap: 30px;
+  align-items: center;
+  background-image: url("../image/info-player.png");
+  width: 370px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* 백그라운드 사이즈 설정 */
+
+}
+
+.chip-box-ui {
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 40px;
+  padding: 1px 8px;
+  font-size: 16px;
+  text-align: center; /* 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  top: -5px; /* 높이 */
+  background: linear-gradient(to bottom, #fef9f1, #f7e3c8); /* 색이 순서대로 바뀜 */
+  border: 2px solid #812e1f; /* 붉은 브라운 */
+  border-radius: 12px; /* 둥글둥글 */
+}
+
+/* 마우스를 가져다 대었을 때 효과. */
+.profile-box:hover{
+  background-color: rgb(139, 138, 138);
+}
+
+.jokbo {
+  position: relative;
+  top: 15px;
+}
+
+.game-btn-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* 버튼 사이 간격 */
+  margin-top: 20px;
+}
+
+.game-btn {
+  position: relative;
+  width: 100px;    /* 원하는 가로 크기 */
+  height: 70px;    /* 원하는 세로 크기 */
+  background-color: #7b3f30;
+  color: #fff3e6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer; /* 손가락 모양을 포인터로 변경 */
+}
+
+.game-btn:hover {
+  background-color: #a85642;
+}
+
+#call:hover{
+  background: #14D3FF;
+}
+
+#half:hover{
+  background: #F4D980;
+}
+
+#die:hover{
+  background: #F05650;
+}
+
+/* 밑에 카드들 정렬한다고 임시로 작성합니다. */
+
+.choiceBlock {
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: -50px;
+  flex-direction: row;
+  margin-right: 100px;
+}
+
+.choiceBlock img{
+  height: 150px;
+  border-radius: 12px;
+}
+
+.choiceBlock img:hover {
+  transform: translateY(-6px);
+}

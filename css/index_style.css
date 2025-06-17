@@ -1,0 +1,272 @@
+
+/* 
+자주 사용하는거 정리.
+align-items -> 요게 이제 세로축(교차축, cross axis) 기준으로 자식 요소를 정렬.
+justify-content -> 요게 이제 가로축 기준으로 자식 요소를 정렬.
+padding -> 안쪽에서 여백을 부여.
+TIP : 결국, center 들어가는 것들, relative 같은 것들 전부 위치 지정역할.
++ 위의 2가지는 display: flex일때 작동.
+
+position: relative;
+display: flex;
+디스플레이가 가장 큰 위치지정이고. 포지션은 세밀한 위치조정이란 느낌
+*/
+
+
+/* 메뉴 디자인 재정의 */
+
+.nav-menu{
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 0 20px;
+}
+
+.top_logo {
+  /*position: absolute;*/
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* top_logo 이미지 시스템. */
+.top_logo img {
+    height: 60px;
+}
+
+/* 세로 선 긋는 시스템. */
+.v-line {
+  border-left: 2px solid #363636;
+  width: 2px;
+  height: 100px;
+}
+
+/* 구분선 리디자인 */
+.line-design{
+  padding: 0;
+  margin: 80px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid #8c8c8c;
+}
+
+/* 블러시스템. */
+.blur {
+  filter: blur(2px);
+}
+
+/* 메인 이미지 -> 다만, 이건 먼저 선작업을 이렇게 옵션으로 주고 이후 .image에서 이어서 영향을 주고
+받는 것으로 이미지가 설정값에 맞게 나오도록 만들어 줌. */
+.main-section {
+  /* 자식의 기준점에 영향을 주는 코드 */
+  position: relative;
+  height: 400px;
+  /* 나머지 라인 잘라버리기. */
+  overflow: hidden;
+}
+
+/* Images */
+/* size, 포지션 설정. relative -> 자식의 기준점에 영향을 주는 
+*/
+
+/* 대애충 말하자면, 선 만드는거. */
+
+.block-design-1{
+  background-color: #e6e8ea;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.image {
+  background-image: url("../index_image/메인이미지.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 텍스트 가운데 정렬. + 20px 단위로 자동화 띄워서. */
+
+.center_texts {
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center;     /* 수직 가운데 정렬 */
+  gap: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* 여기가 이제 카운트 박스 */
+
+/* 가운대로 박스 3개를 모아주고 적절한 띄워쓰기, 위치조정정 역할. */
+
+.counter-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 10;
+}
+
+/* 박스3개 내부 구조 설정값 이라 보면 편함.
+border-radius -> 모서리를 둥글게
+bo-shadow -> 박스에 그림자 주는 역할.
+*/
+
+.counter-box {
+  background-color: #f2f3f5;
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-time-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  border-bottom: 2px solid #ff5e57;
+  display: inline-block;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* 이미지 둥글게 */
+
+.circle_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* circle_image클래스의 img값에 적용 */
+
+
+.circle-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ContainerBox. 즉, AboutUS에 사용하는 박스 라인 만들기. */
+
+/* 전체 배경 */
+.history-section {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* 제목 */
+.history-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a5c8f7;
+  margin-bottom: 40px;
+}
+
+/* 타임라인 영역 */
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 중앙 세로선 */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  z-index: 0;
+}
+
+/* 아이템 위치 */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+  padding-left: 60px;
+}
+
+/* 내용 박스 */
+.timeline-box {
+  display: inline-block;
+  background-color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  z-index: 1;
+  position: relative;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 80px;
+  background-color: #2e2e2e;
+  margin-top: 10px;
+}
+
+.content {
+  background: #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 14px;
+}

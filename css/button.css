@@ -1,0 +1,27 @@
+
+
+/* 버튼 리터치. */
+
+/* 버튼의 위치 설정용. */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
+}
+
+/* 글자 색상 조정 + 글자 사이즈, 버튼 간격 설정 + 버튼 색상 변경 + */
+.custom-btn {
+  /* padding -> 가로 세로 버튼 사이즈 조절. */
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Daydream';
+    src: url('../font/Daydream.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DOSMyungjo';
+    src: url('../font/DOSMyungjo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'pixelroborobo';
+    src: url('../font/pixelroborobo.otf') format('truetype');
+}
+
+/* 룰 페이지 제목 폰트 */
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('../font/DungGeunMo.ttf') format('truetype');
+}
